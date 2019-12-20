@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+{% block title %}
+<title>sample1</title>
+{% endblock title %}
+
+    <h1>Welcome to sample page2</h1>
+    <h2>Hello {{data}}</h2>
+    <a href="{% url 'app:demo1' %}">sample <a/>
+{% endblock %}
